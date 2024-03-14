@@ -1,0 +1,56 @@
+// .card{
+//     max-height: 300px;
+//     border:none;
+//     box-shadow: 0px 0px 20px -10px rgba(71,114,254,0.3);
+// }
+// #img-2{
+//     width:78%;  
+// }
+.img-1{
+    max-width:250px;
+    max-height:200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#cardadd {
+    color: rgba(47, 145, 117, 0.765);
+    border-radius: 2px;
+    background-color: #f3f3f9;
+    box-shadow: none;
+    border-radius: 0.6rem;
+    outline: 0;
+}
+#cardadd:hover{
+    background-color: #f4f4cad4;
+    color:Black;
+    font-size: 12.35pt;
+}
+#cardview {
+    color: black; 
+    background-color: #f3f3f9;
+    box-shadow: none;
+    border-radius: 0.6rem;
+    outline: 0;
+    margin-left:2rem; 
+}
+#cardview:hover{
+    background-color: #f4f4cad4;
+    color:Black;
+    font-size: 12.35pt;
+}
+
+#cardbuy{
+    background-color: #f3f3f9;
+    box-shadow: none;
+    border-radius: 0.6rem;
+    outline: 0;
+    margin-top:10px;
+}
+#cardbuy:hover{
+    background-color: #f4f4cad4;
+    color:Black;
+    font-size: 12.35pt;
+}
