@@ -4,7 +4,7 @@
 //     box-shadow: 0px 0px 30px -10px rgba(71,114,254,0.3);
 // }
 #cardadd {
-    color: rgba(47, 145, 117, 0.765);
+    color: black;
     border-radius: 2px;
     background-color: #f3f3f9;
     box-shadow: none;
@@ -14,7 +14,7 @@
 #cardadd:hover{
     background-color: #f4f4cad4;
     color:Black;
-    font-size: 12.35pt;
+    font-size: 10.7pt;
 }
 #cardview {
     color: black; 
@@ -22,23 +22,30 @@
     box-shadow: none;
     border-radius: 0.6rem;
     outline: 0;
-    margin-left:2rem;
+    margin-left:2.5rem;
 }
 #cardview:hover{
     background-color: #f4f4cad4;
     color:Black;
-    font-size: 12.35pt;
+    font-size: 10.7pt;
 }
 
 #cardbuy{
-    background-color: #f3f3f9;
+    // background-color: #f3f3f9;
     box-shadow: none;
     border-radius: 0.6rem;
     outline: 0;
     margin-top: 10px;
 }
 #cardbuy:hover{
-    background-color: #f4f4cad4;
+    // background-color: #f4f4cad4;
     color:Black;
-    font-size: 12.35pt;
+    font-size:11pt;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 290px; /* Example height */
 }
