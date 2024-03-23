@@ -11,31 +11,26 @@ import { NewCardComponent } from '../layout/new-card/new-card.component';
 })
 export class HomeComponent {
 
-  //  data = [
-  //   {
-  //     name : "Asus Rog",
-  //     url : "htps:// dsshs",
-  //     model: "model-1"
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   }
-  //  ];
-
-
-
-  //  data.map((item)=> {
-  //   <div >
-  //   <Card item={item}/>
-  //   </div>
-  //  })
-
-
-  //  //card
-  //  item 
-  //  <image src={itm.url}
-
+  "products" : [
+    {
+      "name": "Asus Rog",
+      "url" : "../../assets/Asus Rog.webp" ,
+      "model": "model-1"
+    },
+    {
+      "name" : "Macbook",
+      "url"  : "../../assets/Laptop2.png",
+      "model": "model-2"
+    },
+    {
+      "name" : "Macbook1",
+      "url"  : "../../assets/Laptop2.png",
+      "model": "model-2"
+    },
+    {
+      "name" : "Rog2",
+      "url"  : "../../assets/Asus Rog.webp",
+      "model": "model-2"
+    }
+   ];
 }
