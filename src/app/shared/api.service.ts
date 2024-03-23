@@ -10,8 +10,8 @@ export class ApiService {
 
   dataDummy: postcard[] = [
     {
-      "name": "Asus Rog Strix R7-6800H",
-      "url" : "../../assets/Asus Rog.webp" ,
+      "name": "Macbook1",
+      "url" : "../../assets/lepmac1.jpg" ,
       "model": "Asus Rog Strix",
       "update": "LAST-UPDATED - FEB 20,2024"
     },
@@ -28,8 +28,8 @@ export class ApiService {
       "update": "LAST-UPDATED - MAR 28,2024"
     },
     {
-      "name" : "Asus Rog Strix R7-6800H",
-      "url"  : "../../assets/Asus Rog.webp",
+      "name" : "Macbook",
+      "url"  : "../../assets/lepmac.jpg",
       "model": "Asus Rog Strix",
       "update": "LAST-UPDATED - FEB 12,2024"
     }
