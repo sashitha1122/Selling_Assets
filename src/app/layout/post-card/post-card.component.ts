@@ -6,7 +6,7 @@ import { postcard } from './productmodal';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddCardComponent } from '../../add-card/add-card.component';
-
+import { ViewmoreComponent } from '../../viewmore/viewmore.component';
 
 @Component({
   selector: 'app-post-card',
@@ -20,8 +20,9 @@ import { AddCardComponent } from '../../add-card/add-card.component';
 
 export class PostCardComponent implements OnInit{
   data: postcard[] = []; 
+  prediction: any;
 
-  constructor(private api:ApiService,private modalService: NgbModal){}
+  constructor(private api:ApiService,public modalService: NgbModal){}
   ngOnInit(): void {
     this.displayproducts();
   }
@@ -33,4 +34,8 @@ displayproducts(){
 handleOpenAddCard() {
   const modalRef = this.modalService.open(AddCardComponent);
 }
+handleOpenViewmore() {
+  const modalRef = this.modalService.open(ViewmoreComponent);
+}
+
 }
