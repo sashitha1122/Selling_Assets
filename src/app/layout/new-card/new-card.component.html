@@ -1,17 +1,46 @@
-<div class="card">
-    <div class="img-1" id="img-new-1">
-        <img src="../../assets/Asus Rog.webp" alt="post-image" class="card-img" style="height:200px; ">
-    </div>
-    <div class="card-body">
-        <div class="line-1">
-            <button id="cardadd" [routerLink]="['/add-card']" >Add to Card</button> 
-            <button id="cardview">View More</button>
+<ng-container *ngIf="true">
+   <div class="container">
+     <div class="card-table">
+        <div class="cart-product">
+           <table class="table table-responsive">
+               <thead>
+                  <tr>
+                      <th>Asset Name</th>
+                      <th>Asset Image</th>
+                      <th>Description</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Action</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                      <td>MacBook Pro </td>
+                      <td>Some Image</td>
+                      <td>This is branded phone</td>
+                      <td>50,0000</td>
+                      <td>1</td>
+                      <td>
+                         <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                      </td>
+                  </tr>
+               </tbody>
+           </table>
         </div>
-        <button id="cardbuy" class=" text-danger">Buy Now</button>
-
-        <h5 class="mt-4">Asus Rog Strix R7-6800H</h5>
-        <p>model: "Asus Rog Strix"</p>
-
-        <small class="bg-light text-warning text-center ml-3"> LAST-UPDATED - FEB 20,2024</small>
     </div>
-</div>
+   </div>
+</ng-container>
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="" alt="">
+            <h4>Your Cart is Empty!</h4>
+            <h6>Add item to it now</h6>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
