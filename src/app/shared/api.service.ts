@@ -62,9 +62,12 @@ export class ApiService {
 
   getProduct(){
     console.log("Starting basic function")
-    // const data = this.http.get<postcard[]>("../../home/products")
     const data = this.dataDummy;
     console.log("data fetched from basic", data)
     return data;
+  }
+  addCart(){
+    const data = this.dataDummy;
+    this.dataDummy.push();
   }
 }
