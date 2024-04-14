@@ -1,9 +1,13 @@
-<div class="card" style="width: 500px; height:520px;">
-  <img src="../../assets/lepmac.jpg" class="card-img-top img-fluid object-fit-fill " alt="...">
+<div class=""style="width:600px; height:520px;">
+  <div class="img-container">
+    <img src="../../assets/lepmac.jpg" class="img-fluid object-fit-fill">
+  </div>
   <div class="card-body">
     <h5 class="card-title">Name</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button id="cardadd" class="btn btn-sm btn-dark mt-2" (click)="handleOpenAddCard()"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Card</button> 
-    <button id="cardbuy" class="btn btn-sm btn-warning mt-2">Buy Now</button>
+    <div class="btn-content">
+      <button id="cardadd" class="btn btn-sm btn-dark mt-2" (click)="handleOpenAddCard()"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Card</button> 
+      <button id="cardbuy" class="btn btn-sm btn-warning mt-2">Buy Now</button>
+    </div>
   </div>
 </div>

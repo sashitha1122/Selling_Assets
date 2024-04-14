@@ -20,7 +20,22 @@
     margin-left: 20px;
 }
 #cardbuy:hover{
-    // background-color: #f4f4cad4;
     color:Black;
     font-size:11pt;
+}
+.img-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    width:250px;
+    margin-top:40px;
+    margin-left: 120px;
+}
+.card-body{
+   margin-top:50px;
+   max-width:500px;
+   margin-left:20px;
+}
+.btn-content{
+  margin-top:100px;
+  margin-left: 120px;
 }
