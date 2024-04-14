@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddCardComponent } from '../../add-card/add-card.component';
 import { ViewmoreComponent } from '../../viewmore/viewmore.component';
+import { CartService } from '../../shared/cart.service';
 
 @Component({
   selector: 'app-post-card',
@@ -20,9 +21,8 @@ import { ViewmoreComponent } from '../../viewmore/viewmore.component';
 
 export class PostCardComponent implements OnInit{
   data: postcard[] = []; 
-  prediction: any;
 
-  constructor(private api:ApiService,public modalService: NgbModal){}
+  constructor(private api:ApiService,public modalService: NgbModal,private cartService : CartService){}
   ngOnInit(): void {
     this.displayproducts();
   }
@@ -30,9 +30,8 @@ displayproducts(){
   // console.log("dta fetching starting")
   this.data = this.api.getProduct()
 }
-
-handleOpenAddCard() {
-  const modalRef = this.modalService.open(AddCardComponent);
+addtoCart(item : any){
+  this.cartService.addtoCart(item);
 }
 handleOpenViewmore() {
   const modalRef = this.modalService.open(ViewmoreComponent);
