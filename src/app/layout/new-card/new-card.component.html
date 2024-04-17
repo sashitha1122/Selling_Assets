@@ -1,4 +1,4 @@
-<ng-container *ngIf="true">
+<ng-container *ngIf="postcard.length !=0">
    <div class="container">
      <div class="card-table">
         <div class="cart-product">
@@ -29,10 +29,10 @@
    </div>
 </ng-container>
 
-<ng-container *ngIf="false">
-    <div class="container">
+<ng-container *ngIf="postcard.length ==0">
+    <div class="container1">
         <div class="card">
-            <h5 class="card-title">My Cart</h5>
+            <h5>My Cart</h5>
         </div>
         <div class="center">
             <img src="" alt="">
