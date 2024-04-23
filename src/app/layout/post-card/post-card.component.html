@@ -5,20 +5,21 @@
             <img src="{{item.url}}" alt="post-image" class="img-fluid object-fit-fill ">
         </div>
         <div class="card-body">
+            <div class="line-0">
+                <h5 class="mt-4">{{item.name}}</h5>
+                <p>model:{{item.model}}</p>
+                <small class="bg-light  text-center ml-3">{{item.update}}</small>
+                <!-- text-warning -->
+            </div>
             <div class="line-1" >
                 <button id="cardadd" class="btn btn-sm btn-dark mt-2" (click)="addtoCart(item)"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Card</button> 
-                <button id="cardview"  class="btn btn-sm btn-dark mt-2" (click)="handleOpenViewmore()"><i class="fa fa-soild fa-info mr-2"></i>&nbsp;View More</button>
+                <button id="cardview"  class="btn btn-sm btn-dark mt-2" (click)="handleOpenViewmore(item.id)" ><i class="fa fa-soild fa-info mr-2"></i>&nbsp;View More</button>
             </div>
             <div class="line-2">
-                <button id="cardbuy" class="btn btn-sm btn-warning mt-2">Buy Now</button>
+                <button id="cardbuy" class="btn btn-sm btn-outline-warning mt-4">Buy Now</button>
             </div>
-            <h5 class="mt-4">{{item.name}}</h5>
-            <p>model:{{item.model}}</p>
-            <small class="bg-light text-warning text-center ml-3">{{item.update}}</small>
         </div>
     </div>
 </div>
-
-
 
 </div>
