@@ -1,12 +1,12 @@
-<div class=""style="width:600px; height:520px;">
+<div style="width:600px; height:520px;">
   <div class="img-container">
-    <img src="../../assets/lepmac.jpg" class="img-fluid object-fit-fill">
+    <img src="../../assets/lepmac.jpg" alt="post-image" class="img-fluid object-fit-fill">
   </div>
   <div class="card-body">
-    <h5 class="card-title">Name</h5>
+    <h5 class="card-title">{{postcard?.name}}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <div class="btn-content">
-      <button id="cardadd" class="btn btn-sm btn-dark mt-2"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Card</button> 
+      <button id="cardadd" (click)="addtoCart(postcard)" class="btn btn-sm btn-dark mt-2"><i class="fa fa-cart-plus mr-2"></i>&nbsp;Add to Card</button> 
       <button id="cardbuy" class="btn btn-sm btn-warning mt-2">Buy Now</button>
     </div>
   </div>

@@ -33,7 +33,7 @@ displayproducts(){
 addtoCart(item : any){
   this.cartService.addtoCart(item);
 }
-handleOpenViewmore() {
+handleOpenViewmore(productid: string){
   const modalRef = this.modalService.open(ViewmoreComponent);
 }
 
