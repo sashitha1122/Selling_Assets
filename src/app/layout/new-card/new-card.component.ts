@@ -20,7 +20,7 @@ export class NewCardComponent implements OnInit {
     this.cartService.getProducts()
     .subscribe(res=>{
       this.postcard = res;
-      this.garndTotal = this.cartService.getTotalPrice();
+      // this.garndTotal = this.cartService.getTotalPrice();
     })
   }
   removeItem(item : any){
