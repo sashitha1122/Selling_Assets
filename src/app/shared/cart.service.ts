@@ -21,18 +21,9 @@ export class CartService {
   addtoCart(postcard : any){
     this.cartItemList.push(postcard);
     this.AssetList.next(this.cartItemList);
-    this.getTotalPrice();
-    console.log(this.cartItemList);
+    // console.log(this.cartItemList);
   }
-
-  getTotalPrice() : number{
-    let grandTotal = 0;
-    this.cartItemList.map((a:any)=>{
-      grandTotal += a.total;
-    })
-    return grandTotal;
-  }
-
+  
   removeCartItem(postcard : any){
     this.cartItemList.map((a:any, index:any)=>{
      if(postcard.id=== a.id){

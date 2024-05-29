@@ -71,9 +71,9 @@ export class ApiService {
    ];
 
   getProduct(){
-    console.log("Starting basic function")
+    // console.log("Starting basic function")
     const data = this.dataDummy;
-    console.log("data fetched from basic", data)
+    // console.log("data fetched from basic", data)
     return data;
   }
   addCart(){

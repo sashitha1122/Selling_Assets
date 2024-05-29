@@ -23,7 +23,6 @@ import { FilterPipe } from '../../shared/filter.pipe';
 
 export class PostCardComponent implements OnInit{
   data: postcard[] = []; 
-  searchKey:string="";
 
   constructor(private api:ApiService,public modalService: NgbModal,private cartService : CartService){}
   ngOnInit(): void {
