@@ -17,7 +17,8 @@ export const routes: Routes = [
         path:'',
         component: HomeComponent
     },
-    { path: 'product/:id',
-     component: ViewmoreComponent 
+    { 
+     component: ViewmoreComponent,
+     path: 'viewmore/:productId' 
     },
 ];

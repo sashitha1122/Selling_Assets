@@ -26,16 +26,16 @@
 .img-container {
     display: flex;
     justify-content: center; /* Horizontally center */
-    width:250px;
-    margin-top:40px;
-    margin-left: 120px;
+    width: 250px;
+    max-height: 13.5rem;
+    margin-top: 2rem;
+    margin-left: 16rem;
 }
 .card-body{
-    margin-top:50px;
-    max-width:500px;
-    margin-left:5px;
+    margin-top:2rem;
+    margin-left: 2rem;
 }
 .btn-content{
-  margin-top: 80px;
-  margin-left: 140px;
+  margin-top: 3rem;
+  margin-left:16rem;
 }

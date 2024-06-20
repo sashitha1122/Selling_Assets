@@ -19,8 +19,11 @@ export class CartService {
     this.AssetList.next(postcard);
   }
   addtoCart(postcard : any){
-    this.cartItemList.push(postcard);
-    this.AssetList.next(this.cartItemList);
+    const itemExists = this.cartItemList.some((item: any) => item.id === postcard.id);
+    if (!itemExists) {
+      this.cartItemList.push(postcard);
+      this.AssetList.next(this.cartItemList);
+    }
     // console.log(this.cartItemList);
   }
   
