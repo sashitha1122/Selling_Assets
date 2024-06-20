@@ -80,8 +80,8 @@ export class ApiService {
     const data = this.dataDummy;
     this.dataDummy.push();
   }
-  getProductbyid(id: string){
-   const data = this.dataDummy;
-   this.dataDummy.push();
+  getProductbyid(id: string): Observable<postcard | undefined> {
+    const product = this.dataDummy.find(item => item.id === id);
+    return of(product);
   }
 }

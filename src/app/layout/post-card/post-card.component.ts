@@ -35,8 +35,9 @@ displayproducts(){
 addtoCart(item : any){
   this.cartService.addtoCart(item);
 }
-handleOpenViewmore(productid: string){
-  const modalRef = this.modalService.open(ViewmoreComponent);
+handleOpenViewmore(productId:string){
+  const modalRef = this.modalService.open(ViewmoreComponent, { size: 'lg' });
+  modalRef.componentInstance.productId = productId;
 }
 
 }
