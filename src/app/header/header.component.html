@@ -1,35 +1,24 @@
-
-  <div class="header">
-    <div class="header-content">
-      <div class="header-content-left">
-        <div class="search-container">
-          <div  class="normal-search ">
-            <input type="text" class="search" name="" id=""  placeholder="Search...">
-            <i class="far fa-search search-icon"></i>
-          </div>
-          <!-- <div>
-            <button  class="search-menu-btn ripple">
-              <i class="far fa-search search-icon"></i>
-            </button>
-          </div> -->
+<div class="header">
+  <div class="header-content">
+    <div class="header-content-left">
+      <div class="search-container">
+        <div  class="normal-search ">
+          <input type="text" class="search" name="" id=""  placeholder="Search...">
+          <i class="far fa-search search-icon"></i>
         </div>
       </div>
-      <div class="header-content-center">
-        <a class="logo  mx-3 bg-white" href="#">
-          <img src="https://corzent.com/images/corzent-new-long-p-500.png" height="30" alt="" loading="lazy"
-            class="logo-image" />
-        </a>
-      </div>
+    </div>
+    <div class="header-content-center">
+      <a class="logo  mx-3 bg-white" href="#">
+        <img src="https://corzent.com/images/corzent-new-long-p-500.png" height="30" alt="" loading="lazy"
+          class="logo-image" />
+      </a>
+    </div>
         <div class="header-content-right">
           <div class="header-menu">
             <div class="header-menu-item">
-              <button class="header-menu-item-btn ripple" >
-                <i class="far fa-bell menu-icon"></i>
-              </button>
-            </div>
-            <div class="header-menu-item">
               <button class="header-menu-item-btn ripple" (click)="handleOpenNewCard()">
-                <i style="font-size:20px; margin-top:10px;" class="fas fa-cart-plus"></i>
+                <i style="font-size:20px; margin-top: 10px;" class="fas fa-cart-plus"></i>
                 <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
               </button>
             </div>
@@ -49,80 +38,4 @@
               <i class="far fa-search search-icon"></i>
             </button>
           </div>
-        </ng-template>
-  
-        <ng-template #notificationOverLay>
-          <div class="overlay overlay-notification overlay-fall" cdkMenu>
-            <ul>
-              <li class="notification-head-container">
-                <div class="notification-head">Notifications</div>
-                <span class="view-all-link">
-                  <a routerLink="notifications" routerLinkActive="active" >View
-                    All</a>
-                </span>
-              </li>
-              <li class="notification-message-container" cdkMenuItem>
-                <i [class]=""></i>
-                <div>
-                  <div class="notification-subject">
-                   
-                  </div>
-                  <p class="notification-desc">
-                    
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </ng-template>
-  
-        <ng-template #userOverlay>
-          <div class=" overlay overlay-user overlay-side-appear" cdkMenu>
-            <div class="sideProfile-content">
-              <div class="sideProfile-up-content">
-                <div class="sideR-up-head common-block-css">
-                </div>
-                <div class="common-block-css">
-                  <div class="sideR-up-dp">
-                    <div class="sideR-up-dp-content">
-                      <img class="sideR-up-dp-userDp" src="../assets/Laptop.png" alt="User Profile Picture is here...">
-                    </div>
-                  </div>
-                  <div class="sideR-up-info">
-                    <!-- <div class="userName">{{userDetail.fName}} {{userDetail.lName}}</div>
-                    <div class="userOtherInfo">
-                      <div class="userPosition common-content-css">{{userDetail.position}}</div>
-                      <div class="userID common-content-css">ID: {{userDetail.userID}}</div> -->
-                    </div>
-                  </div>
-                </div>
-  
-              </div>
-              <div class="sideProfile-down-content">
-                <div class="sideR-down-head"></div>
-                <div class="sideR-down-calender"></div>
-              </div>
-            </div>
-          <!-- </div>
-        </ng-template> -->
-  
-        <ng-template #logOutOverlay>
-            <div class="overlay-logOut-content">
-              <div class="overlay-logOut-ask"> Do you want to logout ?</div>
-              <div class="overlay-logOut-buttons">
-                <div class="overlay-logOut-OKbutton">
-                  <button class="logOut-ok">
-                    <i class="logOut-ok-icon fas fa-sign-out-alt"></i>
-                    OK
-                  </button>
-                </div>
-                <div class="overlay-logOut-CancelButton">
-                  <button class="logOut-cancel"[disabled]="">
-                    <i class="logOut-cancel-icon far fa-times-circle"></i>
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
-        </ng-template>
-      <!-- </div> -->
+    </ng-template>
