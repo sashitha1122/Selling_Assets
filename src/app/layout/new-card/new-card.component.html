@@ -1,4 +1,4 @@
-<ng-container *ngIf="postcard.length !=0">
+<ng-container *ngIf="product.length !=0">
    <div class="container">
      <div class="card-table">
         <div class="cart-product">
@@ -7,17 +7,17 @@
                   <tr>
                       <th>Asset Name</th>
                       <th>Asset Image</th>
-                      <th>Model</th>
-                      <th>Update</th>
+                      <th>Type</th>
+                      <th>Price</th>
                       <th>Action</th>
                   </tr>
                </thead>
                <tbody>
-                  <tr *ngFor="let item of postcard; let i =index">
-                      <td>{{item.name}}</td>
-                      <td><img src="{{item.url}}" alt="post-image" class="img-fluid object-fit-fill "></td>
-                      <td>{{item.model}}</td>
-                      <td>{{item.update}}</td>
+                  <tr *ngFor="let item of product; let i =index">
+                      <td class="mt-2">{{item.name}}</td>
+                      <td><img src="{{item.imageUrl}}" alt="post-image" class="img-fluid img-thumbnail object-fit-fill mw-50 mh-25"></td>
+                      <td>{{item.assetType}}</td>
+                      <td>{{item.price}}</td>
                       <td>
                          <button (click)="removeItem(item)" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
                       </td>
@@ -29,7 +29,7 @@
    </div>
 </ng-container>
 
-<ng-container *ngIf="postcard.length ==0">
+<ng-container *ngIf="product.length ==0">
     <div class="container1">
         <div class="card">
             <h3>My Cart</h3>

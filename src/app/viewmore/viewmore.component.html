@@ -1,9 +1,10 @@
-<div style="width:800px; height:500px;" *ngIf="productData">
+<div style="width:800px; height:500px;" *ngIf="product">
   <div class="img-container">
-    <img src="{{productData.url}}" alt="post-image" class="img-fluid object-fit-fill">
+    <img src="{{product.imageUrl}}" alt="post-image" class="img-fluid object-fit-fill">
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{productData.name}}</h5><br>
+    <h5 class="card-title">{{product.name}}</h5><br>
+    <p>{{product.description}}</p>
     <p class="card-text">MacBook Pro blasts forward with the M3, M3 Pro, and M3 Max chips. Built on 
       3‑nanometer technology and featuring an all-new GPU architecture, they’re the most advanced 
       chips ever built for a personal computer. And each one brings more pro performance and capability.</p>
