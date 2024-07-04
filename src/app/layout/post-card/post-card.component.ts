@@ -22,15 +22,17 @@ import { FilterPipe } from '../../shared/filter.pipe';
 
 
 export class PostCardComponent implements OnInit{
-  data: postcard[] = []; 
+  product: any[] =[];
 
   constructor(private api:ApiService,public modalService: NgbModal,private cartService : CartService){}
   ngOnInit(): void {
     this.displayproducts();
   }
 displayproducts(){
-  // console.log("dta fetching starting")
-  this.data = this.api.getProduct()
+  this.api.getProduct().subscribe((Res:any)=>{
+    this.product = Res;
+  })
+ 
 }
 addtoCart(item : any){
   this.cartService.addtoCart(item);

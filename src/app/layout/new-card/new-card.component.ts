@@ -12,14 +12,14 @@ import { CartService } from '../../shared/cart.service';
 })
 export class NewCardComponent implements OnInit {
   // data: postcard[] = []; 
-  public postcard : any = [];
+  public product : any = [];
   public garndTotal !: number 
   constructor(private cartService : CartService){}
 
   ngOnInit(): void {
     this.cartService.getProducts()
     .subscribe(res=>{
-      this.postcard = res;
+      this.product = res;
       // this.garndTotal = this.cartService.getTotalPrice();
     })
   }

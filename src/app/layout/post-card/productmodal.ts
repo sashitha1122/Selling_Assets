@@ -1,7 +1,10 @@
 export interface postcard{
-    id:string;
+
     name: string;
-    url: string;
-    model: string;
+    assetType:string,
+    description:string;
+    imageUrl: string;
+    isActive:string
+    price: string;
     update:string;
 }
